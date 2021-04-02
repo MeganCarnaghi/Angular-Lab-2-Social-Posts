@@ -21,4 +21,14 @@ export class SocialPostsComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  // function to delete post from the posts array
+  onDelete(i: number) {
+    this.posts.splice(i, 1);
+  }
+
+  // function to submit a new post to the posts array
+  onSubmit(post: Post) {
+    this.posts.unshift(post);
+  }
 }

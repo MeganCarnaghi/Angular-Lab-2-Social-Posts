@@ -1,5 +1,5 @@
 .post__form {
-  width: 50%;
+  width: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,4 +7,33 @@
   padding: 20px;
   border: 1px solid #000000;
   border-radius: 5px;
+  position: absolute;
+  top: 75%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+.main__submit-button {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 5px 0;
+}
+
+.form__label {
+  margin-bottom: 3px;
+}
+
+.form__title-input {
+  padding: 3px;
+  margin-bottom: 10px;
+  border: 1px solid #000000;
+  border-radius: 3px;
+}
+
+.form__thought-textarea {
+  padding: 3px;
+  margin-bottom: 10px;
+  border: 1px solid #000000;
+  border-radius: 3px;
 }

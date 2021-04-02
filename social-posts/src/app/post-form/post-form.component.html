@@ -8,17 +8,20 @@
     class="form__title-input"
   />
   <label class="form__label" for="thought">Thought</label>
-  <input
+  <textarea
     id="thought"
     name="thought"
-    type="thought"
     placeholder="Enter thought here"
-    class="form__thought-input"
-  />
-  <input
+    class="form__thought-textarea"
+    rows="4"
+  ></textarea>
+  <button
     (click)="submitPost()"
     type="submit"
-    value="Add Post"
-    class="main__submit-input"
-  />
+    class="main__submit-button"
+    button
+  >
+    Add Post
+  </button>
 </form>
+<app-post-form></app-post-form>
