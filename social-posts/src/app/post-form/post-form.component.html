@@ -1,1 +1,24 @@
-<p>post-form works!</p>
+<form class="post__form">
+  <label class="form__label" for="title">Title</label>
+  <input
+    id="title"
+    name="title"
+    type="text"
+    placeholder="Enter title here"
+    class="form__title-input"
+  />
+  <label class="form__label" for="thought">Thought</label>
+  <input
+    id="thought"
+    name="thought"
+    type="thought"
+    placeholder="Enter thought here"
+    class="form__thought-input"
+  />
+  <input
+    (click)="submitPost()"
+    type="submit"
+    value="Add Post"
+    class="main__submit-input"
+  />
+</form>

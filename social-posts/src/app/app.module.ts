@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { SocialPostsComponent } from './social-posts/social-posts.component';
 import { PostComponent } from './post/post.component';
@@ -11,12 +11,10 @@ import { PostFormComponent } from './post-form/post-form.component';
     AppComponent,
     SocialPostsComponent,
     PostComponent,
-    PostFormComponent
+    PostFormComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

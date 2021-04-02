@@ -2,6 +2,14 @@
   <header>
     <h1>My Thoughts</h1>
   </header>
+  <!-- New Thought button-->
   <button class="main__button">New Thought</button>
-  <app-post></app-post>
+  <!-- List of Posts -->
+  <div class="posts__div">
+    <app-post
+      *ngFor="let post of posts; let i = index"
+      [post]="post"
+    ></app-post>
+  </div>
+  <app-post-form></app-post-form>
 </main>
