@@ -1,4 +1,6 @@
 .post__form {
+  align-self: center;
+  height: 200px;
   width: 400px;
   display: flex;
   flex-direction: column;
@@ -7,10 +9,6 @@
   padding: 20px;
   border: 1px solid #000000;
   border-radius: 5px;
-  position: absolute;
-  top: 75%;
-  right: 50%;
-  transform: translate(50%, -50%);
 }
 
 .main__submit-button {

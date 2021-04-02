@@ -1,4 +1,8 @@
-<form class="post__form">
+<form
+  class="post__form"
+  #addPostForm="ngForm"
+  (ngSubmit)="submitPost(addPostForm)"
+>
   <label class="form__label" for="title">Title</label>
   <input
     id="title"
@@ -6,6 +10,7 @@
     type="text"
     placeholder="Enter title here"
     class="form__title-input"
+    ngModel
   />
   <label class="form__label" for="thought">Thought</label>
   <textarea
@@ -14,14 +19,7 @@
     placeholder="Enter thought here"
     class="form__thought-textarea"
     rows="4"
+    ngModel
   ></textarea>
-  <button
-    (click)="submitPost()"
-    type="submit"
-    class="main__submit-button"
-    button
-  >
-    Add Post
-  </button>
+  <button type="submit" class="main__submit-button">Add Post</button>
 </form>
-<app-post-form></app-post-form>

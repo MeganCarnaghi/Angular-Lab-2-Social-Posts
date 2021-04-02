@@ -3,7 +3,8 @@
     <h1>My Thoughts</h1>
   </header>
   <!-- New Thought button-->
-  <button class="main__button">New Thought</button>
+  <button (click)="onShowForm()" class="main__button">New Thought</button>
+
   <!-- List of Posts -->
   <div class="posts__div">
     <app-post
@@ -12,4 +13,10 @@
       (deleted)="onDelete(i)"
     ></app-post>
   </div>
+  <!-- Form to add new post -->
+  <app-post-form
+    class="add-form"
+    *ngIf="showForm"
+    (submitted)="onSubmit($event)"
+  ></app-post-form>
 </main>
